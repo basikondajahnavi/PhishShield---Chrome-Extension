@@ -1,1 +1,145 @@
 
+body {
+    font-family: 'Russo One', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #a8e063, #56ab2f);
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.container {
+    width: 340px;
+    padding: 25px 20px;
+    border-radius: 15px;
+    background: rgba(10, 50, 10, 0.85);
+    box-shadow: 0 8px 25px rgba(0, 128, 0, 0.7);
+    max-width: 95vw;
+    margin: 25px auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    filter: drop-shadow(0 0 6px #76ff03);
+}
+
+h1 {
+    font-size: 26px;
+    margin: 0;
+    color: #a5d6a7;
+    text-shadow: 0 0 8px #76ff03;
+}
+
+.status-card {
+    background: rgba(0, 50, 0, 0.7);
+    padding: 18px 15px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(102, 187, 106, 0.6);
+}
+
+.status-header h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #c8e6c9;
+    font-weight: 600;
+    text-shadow: 0 0 6px #4caf50;
+}
+
+.status-icon-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0;
+    height: 70px;
+}
+
+.status-icon {
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0 0 6px #4caf50);
+}
+
+.pulse-animation {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(102, 187, 106, 0.4);
+    animation: pulse 1.5s infinite;
+    z-index: 1;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.status-text {
+    font-size: 18px;
+    margin-top: 12px;
+    font-weight: 700;
+    color: #e8f5e9;
+    text-shadow: 0 0 4px #66bb6a;
+}
+
+.details-container {
+    margin-top: 14px;
+    background: rgba(0, 70, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 8px rgba(102, 187, 106, 0.5);
+}
+
+.details-text {
+    font-size: 14px;
+    margin: 0;
+    color: #dcedc8;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 22px;
+}
+
+.action-button {
+    background: #4caf50;
+    border: none;
+    color: #e8f5e9;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.7);
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #388e3c;
+}
+
+.footer {
+    font-size: 13px;
+    margin-top: 18px;
+    color: #a5d6a7;
+    text-shadow: 0 0 4px #2e7d32;
+}
